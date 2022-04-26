@@ -13,22 +13,8 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function deleteDigit(n) {
   // throw new NotImplementedError('Not implemented');
-  var result = 0,
-        num_digits = [];
-    while (n) {
-        num_digits.push(n % 10);
-        n = Math.floor(n / 10);
-    }
-    for (var index_num = 0; index_num < num_digits.length; index_num++) {
-        var num = 0;
-        for (var i = num_digits.length - 1; i >= 0; i--) {
-            if (i !== index_num) {
-                num = num * 10 + num_digits[i];
-            }
-        }
-        result = Math.max(n, result);
-    }
-    return result;
+  var s = String(n).split('').map(Number)
+    return Math.max(...s.map((el,i)=>{var r = s.slice(); r.splice(i,1); return Number( r.join(''))}))
 }// remove line with error and write your code here
 
 
