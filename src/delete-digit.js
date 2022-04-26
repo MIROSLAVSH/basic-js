@@ -20,10 +20,10 @@ function deleteDigit(n) {
         n = Math.floor(n / 10);
     }
     for (var index_num = 0; index_num < num_digits.length; index_num++) {
-        var n = 0;
+        var num = 0;
         for (var i = num_digits.length - 1; i >= 0; i--) {
             if (i !== index_num) {
-                n = n * 10 + num_digits[i];
+                num = num * 10 + num_digits[i];
             }
         }
         result = Math.max(n, result);
