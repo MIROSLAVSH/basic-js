@@ -18,7 +18,7 @@ function getCommonCharacterCount(s1, s2) {
         s2.includes(s1[i]) ? count++ : false;
     }
 
-    return count;
+    return count - 1;
 }
   // throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
