@@ -17,8 +17,15 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-function dateSample(/* sampleActivity */) {
-  throw new NotImplementedError('Not implemented');
+function dateSample(sampleActivity) {
+  // throw new NotImplementedError('Not implemented');
+  // if(sampleActivity === '100%'){
+  //   result = 'young';
+  // } if(sampleActivity < '100%' && sampleActivity > '0%'){
+  //     result = 'old';
+  //   }
+  //   return result;
+  
   // remove line with error and write your code here
 }
 
