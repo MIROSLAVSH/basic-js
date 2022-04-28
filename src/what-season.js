@@ -13,13 +13,13 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function getSeason(date) {
   // throw new NotImplementedError('Not implemented');
-  if(date === getMonth(12, 1, 2)){
+  if(date in getMonth(12, 1, 2)){
     return 'winter'}
-  if(date === getMonth(3, 4, 5)){
+  if(date in getMonth(3, 4, 5)){
     return 'spring'}
-  if(date === getMonth(6, 7, 8)){
+  if(date in getMonth(6, 7, 8)){
     return 'summer'}
-  if(date === getMonth(9, 10, 11)){
+  if(date in getMonth(9, 10, 11)){
     return 'fall'}
     // remove line with error and write your code here
 }
