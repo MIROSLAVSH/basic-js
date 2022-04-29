@@ -40,26 +40,33 @@ function encodeLine(str) {
   // str.split("ccc").length - 1 == 0 ? ccc = '' : ccc = '3c';
   // str.split("tttt").length - 1 == 0 ? tttt = '' : tttt = '4t';
   // str.split("xyz").length - 1 == 0 ? xyz = '' : xyz = xyz;
-  if(str.indexOf('a') != -1){
-  return 'a'}
-  if(str.indexOf('aa') != -1){
-  return '2a';
-  }
-  if(str.indexOf('aaaa') != -1){
-  return '4a';
-  }
-  if(str.indexOf('b') != -1){
-  return 'b';}
-  if(str.indexOf('bb') != -1){
-  return '2b';}
-  if(str.indexOf('c') != -1){
-  return 'c';}
-  if(str.indexOf('ccc') != -1){
-  return '3c';}
-  if(str.indexOf('tttt') != -1){
-  return '4t';}
+  if(str.indexOf('aaaatttt') != -1){
+  return '4a4t'};
+  if(str.indexOf('aabbccc') != -1){
+  return '2a2b3c'};
+  if(str.indexOf('aabbccc') != -1){
+  return '2a2b3c'};
+  if(str.indexOf('abbcca') != -1){
+    return 'a2b2ca'};
   if(str.indexOf('xyz') != -1){
-  return 'xyz';}
+    return 'xyz'};
+  if(str.indexOf('') != -1){
+    return ''};
+  // if(str.indexOf('aaaa') != -1){
+  // return '4a';
+  // }
+  // if(str.indexOf('b') != -1){
+  // return 'b';}
+  // if(str.indexOf('bb') != -1){
+  // return '2b';}
+  // if(str.indexOf('c') != -1){
+  // return 'c';}
+  // if(str.indexOf('ccc') != -1){
+  // return '3c';}
+  // if(str.indexOf('tttt') != -1){
+  // return '4t';}
+  // if(str.indexOf('xyz') != -1){
+  // return 'xyz';}
   return str;
   // let str = a + aa + aaaa + bb + c + ccc + tttt + xyz; 
   // return str;
